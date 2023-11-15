@@ -18,20 +18,26 @@
         <section class="container">
             <h1>Tip Calculator</h1>
             <p>Enter the bill amount and tip percantage to calculate the total.</p>
-            <div class="calculator">
-                <label for="bill">Bill amount:</label>
-                <input type="text" name="bill" id="bill">
+            <form id="tipForm">
+                <div class="calculator">
+                    <label for="bill">Bill amount:</label>
+                    <input type="text" name="bill" id="bill">
 
-                <label for="tip">Tip percantage:</label>
-                <input type="text" name="tip" id="tip">
+                    <label for="tip">Tip percantage:</label>
+                    <input type="text" name="tip" id="tip">
 
-                <button>Calculate</button>
+                    <button type="button">Calculate</button>
 
-                <p class="total">Total:</p>
-                <div class="total-sum"></div>
-            </div>
+                    <div class="sum-container">
+                        <p class="total">Total:</p>
+                        <div class="total-sum"></div>
+                    </div>
+                </div>
+            </form>
         </section>
     </div>
+
+    <script src="app.js"></script>
 </body>
 
 </html>
