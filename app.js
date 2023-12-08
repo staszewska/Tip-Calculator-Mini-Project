@@ -5,7 +5,8 @@ const totalSum = document.querySelector(".total-sum");
 
 
 
-button.addEventListener("click", function () {
+button.addEventListener("click", function (e) {
+    console.log(e)
     billValue = +billInputValue.value;
     tipValue = +tipInputValue.value;
 
